@@ -60,7 +60,9 @@ final
 Iterating through the multiple URLs was a complicated task but thankfully I found some extremely helpful resources (provided below). To start I created an object named jump that used the seq() function starting at 2000, and ending at 2020, while jumping by 2. Next, using the paste function, I pasted the base url, not including the end portion that changed depending the year or the cycle, instead replacing it with the jump object I created before, and separating by empty spaces, and named it to an object named site. Then to actually iterate, I used the lapply() function which applies a function over a list. In this case, I inputted site and the scrape_pac function, meaning it's applying the scrape_pac function over the site object (which is a list of the URLs). This created multiple different tables, and I decided to combine them into one, because it would be easier to use for analysis that way, and it also looked nicer. To do this, I used the do.call() function. This ran the rbind() function along the iterated tables, combining them into one. Saving this to an object named final, then printing the final table to observe the results.
 
 [Looping Through Multiple URLS](https://stackoverflow.com/questions/40666406/loop-across-multiple-urls-in-r-with-rvest)
+
 [lapply](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/lapply)
+
 [do.call](https://www.rdocumentation.org/packages/base/versions/3.6.2/topics/do.call)
 
 ### Tobacco Analysis
